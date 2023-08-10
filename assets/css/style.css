@@ -8,13 +8,15 @@ body{
 }
 :root{
   --priamary-color: ;
-  --secondary-color: ;
-  --button-color: red;
-  --box-shadow:black;
+  --secondary-color:#f39c12 ;
+  --red: red;
+  --black:black;
+  --light-black:rgb(42, 39, 39);
+  --shadow:rgb(200, 183, 183);
 }
 /* header area start */
 .menu ul li .menu-hover:hover{
-  color: #f39c12;
+  color: var(--secondary-color);
 }
 .bg-image{
   background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/bg-image.jpg);
@@ -34,17 +36,20 @@ body{
   line-height: 30px;
 }
 .card{
-  box-shadow: 4px 6px 10px rgb(200, 183, 183);
+  box-shadow: 4px 6px 10px var(--shadow);
   transition: all .2s;
-  border: 8px solid transparent
+  border: 8px solid transparent;
 }
 .card:hover{
-  border-top: 8px solid var(--button-color);
-  box-shadow: 2px 4px 12px var(--box-shadow);
+  border-top: 8px solid var(--red);
+  box-shadow: 2px 4px 12px var(--black);
 }
 .client-image{
-  background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/client-choose-image.jpg);
+  background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/client-choose.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.footer-top{
+  background-color: var(--light-black);
 }
