@@ -53,3 +53,12 @@ body{
 .footer-top{
   background-color: var(--light-black);
 }
+.social{
+  padding-top: 100px;
+}
+.social-icon{
+  transition: all .3s;
+}
+.social-icon:hover{
+  color: red;
+}
