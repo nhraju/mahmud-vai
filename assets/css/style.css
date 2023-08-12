@@ -54,7 +54,7 @@ body{
   background-color: var(--light-black);
 }
 .social{
-  padding-top: 100px;
+  padding-top: 90px;
 }
 .social-icon{
   transition: all .3s;
